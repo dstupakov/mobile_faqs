@@ -6,12 +6,12 @@
     $('.faq_question').click(function() {
  
         if ($(this).parent().is('.open')){
-            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},250);
             $(this).closest('.faq').removeClass('open');
  
             }else{
                 var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
-                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},250);
                 $(this).closest('.faq').addClass('open');
             }
  
@@ -22,12 +22,28 @@
 </script>
 <style>
 /*FAQS*/
+.body {
+  background-color: #cccccc;
+}
+
+.faq {
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    padding: 5px 5px 5px 5px;
+    background-color: #ffffff;
+}
+
+.faq_container {
+  padding: 3px 3px;
+}
+
 .faq_question {
     margin: 0px;
-    padding: 15px 15px 5px 0px;
+    padding: 5px 10px 0px 5px;
     display: inline-block;
     cursor: pointer;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
     font-size: 18px;
     font-style: normal;
     font-variant: normal;
@@ -38,8 +54,9 @@
 .faq_answer_container {
     height: 0px;
     overflow: hidden;
-    padding: 0px;
+    padding: 5px 5px 2px 5px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
@@ -48,123 +65,157 @@
 }
 </style>
 
+<body class="body">
 <div class="faq_container">
-    <div class="faq">
-      <div class="faq_question">Can I continue to use my normal inhaler?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Yes, the Propeller sensor attaches to the end of most metered-dose inhalers. You will not need a new inhaler to start using the Propeller sensor.</div>
-           </div>        
+  <div class="faq">
+    <div class="faq_question">Can I continue to use my normal inhaler?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Yes, the Propeller sensor attaches to the end of most metered-dose inhalers. You will not need a new inhaler to start using the Propeller sensor.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">What medications are compatible with the Propeller sensor?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">The Propeller&nbsp;sensor is compatible with most metered-dose inhalers for both rescue and controller medications. To see a complete list of medications the Propeller&nbsp;sensor is compatible with,&nbsp;<a href="http://propellerhealth.com/compatible-medications/">click here</a>.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">How do I get a Propeller Sensor?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Currently, Propeller requires a prescription from your doctor. &nbsp;If you would like to receive Propeller, please contact us and we can help facilitate the process.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">What are the two different buttons on my Propeller sensor?</div>
+         <div class="faq_answer_container">
+            <div class="faq_answer">The sensor has two buttons, a primary button on top [1] that detects when the inhaler is used, and a secondary button on the side [2] that is used for other functions like pairing and placing the sensor in airplane mode.</div>
+         </div>        
     </div>
-    <div class="faq">
-      <div class="faq_question">What medications are compatible with the Propeller sensor?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">The Propeller&nbsp;sensor is compatible with most metered-dose inhalers for both rescue and controller medications. To see a complete list of medications the Propeller&nbsp;sensor is compatible with,&nbsp;<a href="http://propellerhealth.com/compatible-medications/">click here</a>.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">How do I get a Propeller Sensor?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Currently, Propeller requires a prescription from your doctor. &nbsp;If you would like to receive Propeller, please contact us and we can help facilitate the process.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">What are the two different buttons on my Propeller sensor?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">The sensor has two buttons, a primary button on top [1] that detects when the inhaler is used, and a secondary button on the side [2] that is used for other functions like pairing and placing the sensor in airplane mode.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">Does my Bluetooth Smart sensor need to be charged?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">The Bluetooth Smart sensor battery will last at least 1.5 years. When the battery is low, we will send you a new sensor.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">What happens if I lose the Propeller sensor?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Not to worry. Simply call our office at 877-251-5451 or email us at&nbsp;<a href="http://propellerhealth.com/supportcontact/">help(at)propellerhealth.com</a>&nbsp;so we can get you what you need.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">The Bluetooth Smart sensor is compatible with which devices?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">The Bluetooth Smart sensor is compatible with devices running on iOS 7 and Android 4.3+</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">What do I do when I refill my inhaler prescription?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Don’t forget to move your sensor to your new inhaler! Make sure if&nbsp;you are refilling&nbsp;both your daily and your rescue medication that you note down which sensor should be on which medication.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">What happens when I upgrade to a new phone?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">When you get a new phone, just download the Propeller app and log in. You will be good to go.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">I’m concerned about privacy. How secure is my information?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Your privacy is very important to Propeller, and we value your privacy. Your information will never be sold, and your personally identifiable information, such as full name and email address, will never be revealed to others without your consent. The company’s privacy practices and the choices you can make about the way your information is collected online and how that information is used are explained in our&nbsp;<a href="http://propellerhealth.com/privacy/">privacy policy</a>.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">Does the sensor mean you can monitor where I am? Or my child? </div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">No. Not to worry, this is not a big brother scenario. Think about your sensor as snapping a photo each time you use the inhaler – a photo of date, time, and location data when paired with your mobile device. Location data from your inhaler usages is not shared with anyone unless you give permission, such as choosing to share your asthma or COPD data with a family member or healthcare provider.</div>
-           </div>        
-      </div>
-    </div>
-    <div class="faq">   
-      <div class="faq_question">Can I turn off my location tracking if I don’t ever want my location information recorded?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Yes. You can disable location settings for the Propeller mobile app via your general settings on your phone. When location services are disabled, the app will still keep track of the date and time that you use your inhaler, but it will not collect any location information.
-           </div>  
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">Does my Bluetooth Smart sensor need to be charged?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">The Bluetooth Smart sensor battery will last at least 1.5 years. When the battery is low, we will send you a new sensor.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">What happens if I lose the Propeller sensor?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Not to worry. Simply call our office at 877-251-5451 or email us at&nbsp;<a href="http://propellerhealth.com/supportcontact/">help(at)propellerhealth.com</a>&nbsp;so we can get you what you need.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">The Bluetooth Smart sensor is compatible with which devices?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">The Bluetooth Smart sensor is compatible with devices running on iOS 7 and Android 4.3+</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">What do I do when I refill my inhaler prescription?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Don’t forget to move your sensor to your new inhaler! Make sure if&nbsp;you are refilling&nbsp;both your daily and your rescue medication that you note down which sensor should be on which medication.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">What happens when I upgrade to a new phone?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">When you get a new phone, just download the Propeller app and log in. You will be good to go.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">I’m concerned about privacy. How secure is my information?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Your privacy is very important to Propeller, and we value your privacy. Your information will never be sold, and your personally identifiable information, such as full name and email address, will never be revealed to others without your consent. The company’s privacy practices and the choices you can make about the way your information is collected online and how that information is used are explained in our&nbsp;<a href="http://propellerhealth.com/privacy/">privacy policy</a>.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">Does the sensor mean you can monitor where I am? Or my child? </div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">No. Not to worry, this is not a big brother scenario. Think about your sensor as snapping a photo each time you use the inhaler – a photo of date, time, and location data when paired with your mobile device. Location data from your inhaler usages is not shared with anyone unless you give permission, such as choosing to share your asthma or COPD data with a family member or healthcare provider.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">   
+    <div class="faq_question">Can I turn off my location tracking if I don’t ever want my location information recorded?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Yes. You can disable location settings for the Propeller mobile app via your general settings on your phone. When location services are disabled, the app will still keep track of the date and time that you use your inhaler, but it will not collect any location information.
+        </div>  
       </div>      
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq"> 
+    <div class="faq_question">If I share my data with my healthcare provider or family member, what do they see?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">You decide which data you want to share. Remember, you’re always in control. There are four key types of data, and you can decide to share each one or none:
+          <ol start="1">
+          <li>Clinical data (medications, events, and level of control)</li>
+          <li>Personal data (name, birthdate, address, phone number)</li>
+          <li>Sensor data (sensor ID, battery level, last sync)</li>
+          <li>Aggregated, anonymized location data</li>
+          </ol>
+        </div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">What do other people in the Propeller community see in their community maps and trends? Can they see my data?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">No, other Propeller users cannot view your data. If you opt in to share anonymized location data, no personal information will ever be shared, and your trends and locations will be aggregated and anonymized within your local community so nothing can ever be linked to an individual. A user can see, for example, that the area between 3<sup>rd</sup> and 7<sup>th</sup> streets downtown is a hot spot for &nbsp;attacks, but they can’t see who has been having problems there. We are also careful to aggregate hot spots to include multiple users so that no hot spot could be traced back to an individual’s home or work location.</div>
+      </div>        
     </div>
-    <div class="faq"> 
-      <div class="faq_question">If I share my data with my healthcare provider or family member, what do they see?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">You decide which data you want to share. Remember, you’re always in control. There are four key types of data, and you can decide to share each one or none:
-              <ol start="1">
-              <li>Clinical data (medications, events, and level of control)</li>
-              <li>Personal data (name, birthdate, address, phone number)</li>
-              <li>Sensor data (sensor ID, battery level, last sync)</li>
-              <li>Aggregated, anonymized location data</li>
-              </ol>
-              </div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">What do other people in the Propeller community see in their community maps and trends? Can they see my data?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">No, other Propeller users cannot view your data. If you opt in to share anonymized location data, no personal information will ever be shared, and your trends and locations will be aggregated and anonymized within your local community so nothing can ever be linked to an individual. A user can see, for example, that the area between 3<sup>rd</sup> and 7<sup>th</sup> streets downtown is a hot spot for &nbsp;attacks, but they can’t see who has been having problems there. We are also careful to aggregate hot spots to include multiple users so that no hot spot could be traced back to an individual’s home or work location.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">How is my adherence percentage and Asthma Control Score calculated?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Adherence percentage is calculated on the doses a user takes vs. what was described in their Propeller medication plan. <a href="http://propellerhealth.com/2013/09/asthma-control-score-mean/">Read this post</a> to understand how your Asthma Control Score is calculated based on the national guidelines.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">If I end my relationship with Propeller Health, what happens to my data?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">You can export your personal identifying information and data before your relationship with Propeller Health ends, if you choose. To the extent possible we will delete from our systems all of your personal identifying information and data. Any personal identifying information and data that we cannot delete will be held securely and privately in accordance with all applicable state and federal laws. We may retain anonymous data about the type of phone you used, technical support information, data that contributed to historical community trends or product enhancements.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">Can my data be sold?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">No<b>.</b> Your information will not &nbsp;be sold, and your personally identifiable information, such as full name and email address, will not be revealed to others without your consent.</div>
-           </div>        
-    </div>
-    <div class="faq">
-      <div class="faq_question">How can I learn more about privacy?</div>
-           <div class="faq_answer_container">
-              <div class="faq_answer">Read our full <a title="Privacy Policy" href="http://propellerhealth.com/privacy/">privacy policy</a>.</div>
-           </div>        
-    </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">How is my adherence percentage and Asthma Control Score calculated?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Adherence percentage is calculated on the doses a user takes vs. what was described in their Propeller medication plan. <a href="http://propellerhealth.com/2013/09/asthma-control-score-mean/">Read this post</a> to understand how your Asthma Control Score is calculated based on the national guidelines.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">If I end my relationship with Propeller Health, what happens to my data?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">You can export your personal identifying information and data before your relationship with Propeller Health ends, if you choose. To the extent possible we will delete from our systems all of your personal identifying information and data. Any personal identifying information and data that we cannot delete will be held securely and privately in accordance with all applicable state and federal laws. We may retain anonymous data about the type of phone you used, technical support information, data that contributed to historical community trends or product enhancements.</div>
+      </div>        
+  </div>
+</div>
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">Can my data be sold?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">No<b>.</b> Your information will not &nbsp;be sold, and your personally identifiable information, such as full name and email address, will not be revealed to others without your consent.</div>
+      </div>        
+  </div>
+</div>  
+<div class="faq_container">
+  <div class="faq">
+    <div class="faq_question">How can I learn more about privacy?</div>
+      <div class="faq_answer_container">
+        <div class="faq_answer">Read our full <a title="Privacy Policy" href="http://propellerhealth.com/privacy/">privacy policy</a>.</div>
+      </div>        
+  </div>
 </div>
 </body>
