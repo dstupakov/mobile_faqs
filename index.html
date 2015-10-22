@@ -12,7 +12,7 @@ $(document).ready(function() {
             $(this).closest('.faq').removeClass('open');
  
             }else{
-                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height()+10 +'px';
                 $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},250);
                 $(this).closest('.faq').addClass('open');
             }
@@ -96,12 +96,12 @@ angular.module('app', ['ngSanitize'])
 }
 
 .faq_container {
-  padding: 3px 3px;
+  padding: 5px 5px;
 }
 
 .faq_question {
     margin: 0px;
-    padding: 7px 10px 2px 5px;
+    padding: 5px 5px 9px 5px;
     display: inline-block;
     cursor: pointer;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -116,7 +116,7 @@ angular.module('app', ['ngSanitize'])
 .faq_answer_container {
     height: 0px;
     overflow: hidden;
-    padding: 5px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #4d4d4d;
     font-size: 14px;
