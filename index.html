@@ -32,7 +32,7 @@ angular.module('app', ['ngSanitize'])
     console.log($scope.userlang);
 
     $scope.getfaqs = function(lang) {
-      if (lang.match(/(es\W)/g)) {
+      if (lang.match(/(es)/g)) {
         return $scope.faqs_es;
       } else {
         return $scope.faqs_en;
@@ -97,7 +97,7 @@ angular.module('app', ['ngSanitize'])
       [{
       faq_question: 'Are spanish FAQs working?',
       faq_answer: 'Yup! They are working. We just need the content now.'             
-      } ];                   
+      }];                   
 
 }]);
 </script>
