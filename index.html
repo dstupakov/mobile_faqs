@@ -29,8 +29,6 @@ angular.module('app', ['ngSanitize'])
 
     $scope.userlang =  window.navigator.language;
 
-    console.log($scope.userlang);
-
     $scope.getfaqs = function(lang) {
       if (lang.match(/(es)/g)) {
         return $scope.faqs_es;
@@ -147,7 +145,6 @@ angular.module('app', ['ngSanitize'])
 </style>
 
 <body class="body" ng-app="app" ng-controller="MyCtrl">
-<div>{{userlang}}</div>
 <div ng-init="faqs = getfaqs(userlang)">
 <div class="faq_container" ng-repeat="questions in faqs">
   <div class="faq">
