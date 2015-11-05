@@ -32,7 +32,7 @@ angular.module('app', ['ngSanitize'])
     console.log($scope.userlang);
 
     $scope.getfaqs = function(lang) {
-      if (lang.match(/(es-)/g)) {
+      if (lang.match(/(es\W)/g)) {
         return $scope.faqs_es;
       } else {
         return $scope.faqs_en;
